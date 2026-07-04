@@ -62,7 +62,7 @@ export default function AutomationPage() {
               <Reveal key={d.title} delay={(i % 3) * 100}>
                 <div className="border-t-2 border-accent pt-4">
                   <h3 className="font-semibold">{d.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/60">{d.body}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-ink/55">{d.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -70,11 +70,11 @@ export default function AutomationPage() {
         </div>
       </section>
 
-      <section className="border-y border-ink/5 bg-white">
+      <section className="border-y border-white/5 bg-surface">
         <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight">One lead, start to finish</h2>
-            <p className="mt-3 max-w-xl text-ink/60">
+            <p className="mt-3 max-w-xl text-ink/55">
               Here's what a fully automated inquiry looks like:
             </p>
           </Reveal>
@@ -82,7 +82,7 @@ export default function AutomationPage() {
             {flow.map((f, i) => (
               <Reveal key={f.n} delay={i * 80}>
                 <div className="flex gap-5">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-semibold text-white">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-semibold text-night">
                     {f.n}
                   </span>
                   <p className="pt-1 leading-relaxed text-ink/70">{f.text}</p>

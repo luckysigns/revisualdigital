@@ -49,12 +49,12 @@ export default function ContactPage() {
                 <div className="mt-8 space-y-8">
                   {next.map((s, i) => (
                     <div key={s.title} className="flex gap-4">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent-light text-sm font-semibold text-accent">
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent/15 text-sm font-semibold text-accent">
                         {i + 1}
                       </span>
                       <div>
                         <h3 className="font-semibold">{s.title}</h3>
-                        <p className="mt-1 text-sm leading-relaxed text-ink/60">{s.body}</p>
+                        <p className="mt-1 text-sm leading-relaxed text-ink/55">{s.body}</p>
                       </div>
                     </div>
                   ))}
@@ -77,7 +77,7 @@ export default function ContactPage() {
                 <iframe
                   src={site.calendlyUrl}
                   title="Book a call"
-                  className="mt-6 h-[700px] w-full rounded-2xl bg-white ring-1 ring-ink/5"
+                  className="mt-6 h-[700px] w-full rounded-2xl bg-surface ring-1 ring-white/5"
                 />
               </div>
             </Reveal>

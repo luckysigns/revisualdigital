@@ -48,7 +48,7 @@ export default function ServicesPage() {
             <Reveal key={s.href} delay={i * 80}>
               <Link
                 href={s.href}
-                className="group block rounded-2xl bg-white p-8 shadow-sm ring-1 ring-ink/5 transition-all hover:-translate-y-1 hover:shadow-md sm:p-10"
+                className="group block rounded-2xl bg-surface p-8 ring-1 ring-white/5 transition-all hover:-translate-y-1 hover:ring-accent/30 sm:p-10"
               >
                 <div className="gap-10 lg:flex lg:items-start lg:justify-between">
                   <div className="max-w-xl">
@@ -56,7 +56,7 @@ export default function ServicesPage() {
                       {s.label}
                     </p>
                     <h2 className="mt-3 text-2xl font-semibold tracking-tight">{s.headline}</h2>
-                    <p className="mt-3 leading-relaxed text-ink/60">{s.body}</p>
+                    <p className="mt-3 leading-relaxed text-ink/55">{s.body}</p>
                     <p className="mt-6 text-sm font-medium text-accent">
                       Learn more{" "}
                       <span className="inline-block transition-transform group-hover:translate-x-1">
@@ -78,14 +78,14 @@ export default function ServicesPage() {
           ))}
 
           <Reveal delay={240}>
-            <div className="rounded-2xl bg-accent-light p-8 sm:p-10">
+            <div className="rounded-2xl bg-accent-deep/20 p-8 sm:p-10">
               <p className="text-xs font-medium uppercase tracking-widest text-accent">
                 The extra edge — Media
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight">
                 Photo, video, drone &amp; 3D tours
               </h2>
-              <p className="mt-3 max-w-xl leading-relaxed text-ink/60">
+              <p className="mt-3 max-w-xl leading-relaxed text-ink/55">
                 We shoot our own media, so your website is built on real photos of your real
                 business — not stock imagery your competitors are using too. Available as an add-on
                 to any website project.

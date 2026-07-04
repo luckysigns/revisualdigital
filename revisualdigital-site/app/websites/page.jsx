@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import BeforeAfter from "@/components/BeforeAfter";
 import Reveal from "@/components/Reveal";
 import CtaBand from "@/components/CtaBand";
 import { site } from "@/lib/config";
@@ -67,9 +68,9 @@ export default function WebsitesPage() {
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
             {builds.map((b, i) => (
               <Reveal key={b.title} delay={i * 100}>
-                <div className="h-full rounded-2xl bg-white p-7 shadow-sm ring-1 ring-ink/5">
+                <div className="h-full card-glow rounded-2xl bg-surface p-7 ring-1 ring-white/5">
                   <h3 className="font-semibold">{b.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/60">{b.body}</p>
+                  <p className="mt-3 text-sm leading-relaxed text-ink/55">{b.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -77,7 +78,25 @@ export default function WebsitesPage() {
         </div>
       </section>
 
-      <section className="border-y border-ink/5 bg-white">
+      <section className="border-t border-white/5">
+        <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <Reveal>
+              <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">Drag it</p>
+              <h2 className="text-balance text-3xl font-semibold tracking-tight">See what a rebuild changes</h2>
+              <p className="mt-4 max-w-md text-ink/55">
+                Same business, same services — completely different first impression.
+                Drag the slider. This is the gap your customers feel in half a second.
+              </p>
+            </Reveal>
+            <Reveal delay={150}>
+              <BeforeAfter />
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/5 bg-surface">
         <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight">Every build includes</h2>
@@ -87,7 +106,7 @@ export default function WebsitesPage() {
               <Reveal key={d.title} delay={(i % 3) * 100}>
                 <div className="border-t-2 border-accent pt-4">
                   <h3 className="font-semibold">{d.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/60">{d.body}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-ink/55">{d.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -98,14 +117,14 @@ export default function WebsitesPage() {
       <section>
         <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
           <Reveal>
-            <div className="rounded-2xl bg-accent-light p-8 sm:p-12">
+            <div className="rounded-2xl bg-accent-deep/20 p-8 sm:p-12">
               <p className="text-xs font-medium uppercase tracking-widest text-accent">
                 Why our sites look different
               </p>
               <h2 className="mt-3 max-w-2xl text-balance text-3xl font-semibold tracking-tight">
                 Real media. Not stock photos.
               </h2>
-              <p className="mt-4 max-w-2xl leading-relaxed text-ink/60">
+              <p className="mt-4 max-w-2xl leading-relaxed text-ink/55">
                 Most local business websites use the same stock imagery — which is why they all look
                 the same. We shoot photo, video, drone footage, and 3D virtual tours of your actual
                 business. Your customers see the real thing before they walk in the door, and your

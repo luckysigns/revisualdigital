@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const inputClass =
-  "w-full rounded-xl border border-ink/10 bg-white px-4 py-3 text-sm outline-none transition-colors placeholder:text-ink/30 focus:border-accent";
+  "w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-ink outline-none transition-colors placeholder:text-ink/25 focus:border-accent";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
+  const [status, setStatus] = useState("idle");
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -27,9 +27,9 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="rounded-2xl bg-accent-light p-10 text-center">
+      <div className="rounded-2xl bg-accent-deep/25 p-10 text-center ring-1 ring-accent/25">
         <h2 className="text-2xl font-semibold tracking-tight">Got it. Talk soon.</h2>
-        <p className="mt-3 text-ink/60">
+        <p className="mt-3 text-ink/55">
           Your message is in. We'll get back to you within one business day.
         </p>
       </div>
@@ -37,7 +37,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-ink/5 sm:p-10">
+    <form onSubmit={handleSubmit} className="rounded-2xl bg-surface p-8 ring-1 ring-white/5 sm:p-10">
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-medium">
@@ -72,7 +72,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="phone" className="mb-1.5 block text-sm font-medium">
-            Phone <span className="font-normal text-ink/40">(optional)</span>
+            Phone <span className="font-normal text-ink/35">(optional)</span>
           </label>
           <input id="phone" name="phone" type="tel" placeholder="Phone number" className={inputClass} />
         </div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
         <label htmlFor="interest" className="mb-1.5 block text-sm font-medium">
           What are you interested in?
         </label>
-        <select id="interest" name="interest" className={inputClass} defaultValue="Not sure yet">
+        <select id="interest" name="interest" className={`${inputClass} bg-surface`} defaultValue="Not sure yet">
           <option>Website design / rebuild</option>
           <option>AI systems</option>
           <option>Automation</option>
@@ -116,7 +116,7 @@ export default function ContactForm() {
       />
 
       {status === "error" && (
-        <p className="mt-4 text-sm text-red-600">
+        <p className="mt-4 text-sm text-red-400">
           Something went wrong sending that. Please try again, or email us directly.
         </p>
       )}
@@ -124,7 +124,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-7 w-full rounded-full bg-accent px-8 py-3.5 font-medium text-white transition-colors hover:bg-accent-dark disabled:opacity-60 sm:w-auto"
+        className="mt-7 w-full rounded-full bg-accent px-8 py-3.5 font-semibold text-night transition-all hover:bg-accent/85 hover:shadow-[0_0_28px_rgba(45,212,191,0.35)] disabled:opacity-60 sm:w-auto"
       >
         {status === "sending" ? "Sending…" : "Send inquiry"}
       </button>

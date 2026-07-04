@@ -8,21 +8,20 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/5 bg-paper/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-white/5 bg-night/75 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-content items-center justify-between px-5 sm:px-8">
         <Link href="/" className="text-lg font-semibold tracking-tight" onClick={() => setOpen(false)}>
           {site.shortName}
           <span className="text-accent">.</span>
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden items-center gap-8 md:flex">
           {nav.map((item) =>
             item.href === "/contact" ? null : (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-ink/70 transition-colors hover:text-ink"
+                className="text-sm text-ink/60 transition-colors hover:text-ink"
               >
                 {item.label}
               </Link>
@@ -30,13 +29,12 @@ export default function Nav() {
           )}
           <Link
             href="/contact"
-            className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-dark"
+            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-night transition-all hover:bg-accent/85 hover:shadow-[0_0_24px_rgba(45,212,191,0.35)]"
           >
             Book a free call
           </Link>
         </nav>
 
-        {/* Mobile toggle */}
         <button
           className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
           onClick={() => setOpen(!open)}
@@ -49,15 +47,14 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {open && (
-        <nav className="border-t border-ink/5 bg-paper px-5 pb-6 pt-2 md:hidden">
+        <nav className="border-t border-white/5 bg-night px-5 pb-6 pt-2 md:hidden">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="block border-b border-ink/5 py-3 text-base text-ink/80"
+              className="block border-b border-white/5 py-3 text-base text-ink/80"
             >
               {item.label}
             </Link>
@@ -65,7 +62,7 @@ export default function Nav() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-4 block rounded-full bg-accent px-5 py-3 text-center text-sm font-medium text-white"
+            className="mt-4 block rounded-full bg-accent px-5 py-3 text-center text-sm font-semibold text-night"
           >
             Book a free call
           </Link>
