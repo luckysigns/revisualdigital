@@ -52,7 +52,7 @@ export async function POST(request) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: `Leads <onboarding@resend.dev>`, // swap for leads@revisualdigital.com once domain is verified in Resend
+        from: `ReVisual Digital <leads@revisualdigital.com>`,
         to: [site.email],
         reply_to: email,
         subject: `New lead: ${name} — ${business}`,
