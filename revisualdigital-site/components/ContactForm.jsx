@@ -84,9 +84,8 @@ export default function ContactForm() {
         </label>
         <select id="interest" name="interest" className={`${inputClass} bg-surface`} defaultValue="Not sure yet">
           <option>Website design / rebuild</option>
-          <option>AI systems</option>
-          <option>Automation</option>
-          <option>Media (photo / video / 3D tours)</option>
+          <option>Media (photo / video / drone / 3D tours)</option>
+          <option>Smart systems (booking / follow-up / AI replies)</option>
           <option>Not sure yet</option>
         </select>
       </div>

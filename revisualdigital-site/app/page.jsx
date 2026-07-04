@@ -6,7 +6,7 @@ import Marquee from "@/components/Marquee";
 import BeforeAfter from "@/components/BeforeAfter";
 import ChatDemo from "@/components/ChatDemo";
 import Tilt from "@/components/Tilt";
-import { IconMonitor, IconBot, IconZap, IconGauge, IconPhone, IconCalendar, IconMail, IconSearch, IconClock, IconTrendDown, IconInbox } from "@/components/Icons";
+import { IconMonitor, IconCamera, IconZap, IconGauge, IconPhone, IconCalendar, IconMail, IconSearch, IconClock, IconTrendDown, IconInbox } from "@/components/Icons";
 import { site } from "@/lib/config";
 
 export const metadata = {
@@ -43,18 +43,18 @@ const services = [
     body: "Modern, fast, mobile-first websites with clear calls to action and SEO fundamentals built in — designed to convert, not just look good.",
   },
   {
-    href: "/ai-systems",
-    icon: IconBot,
-    label: "AI Integration",
-    headline: "A team member that never sleeps",
-    body: "AI-powered customer support, email handling, and lead follow-up that answers instantly, around the clock — so no inquiry goes cold.",
+    href: "/media",
+    icon: IconCamera,
+    label: "Photo · Video · Drone · 3D",
+    headline: "Real media that makes you look established",
+    body: "We shoot your actual business — photography, video, drone, and 3D virtual tours — so your site never looks like a stock-photo template.",
   },
   {
-    href: "/automation",
+    href: "/smart-systems",
     icon: IconZap,
-    label: "Automation Systems",
-    headline: "Your business on autopilot where it counts",
-    body: "Booking workflows, inquiry routing, CRM integration, and lead nurturing that run themselves — and give you your week back.",
+    label: "Smart Systems",
+    headline: "Booking and follow-up that run themselves",
+    body: "Online booking, instant inquiry replies, automatic follow-up, and AI-powered chat — so no lead goes cold and your admin shrinks.",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-content px-5 pb-20 pt-20 sm:px-8 sm:pb-28 sm:pt-28">
           <p className="fade-in-late mb-6 inline-flex items-center gap-2 rounded-full bg-white/[0.04] px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-accent ring-1 ring-white/10" style={{ animationDelay: "0.5s" }}>
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-            Web design · AI systems · Automation — {site.city}
+            Websites · Media · Smart Systems — {site.city}
           </p>
           <h1 className="max-w-3xl text-5xl font-semibold leading-[1.04] tracking-tight sm:text-7xl">
             {heroWords.map((w, i) => (
@@ -275,9 +275,9 @@ export default function HomePage() {
           <Reveal delay={300}>
             <div className="mt-8 rounded-2xl bg-accent-deep/20 p-7 ring-1 ring-accent/20">
               <p className="text-sm leading-relaxed text-ink/70">
-                <span className="font-semibold text-ink">We also shoot our own media</span> — photo,
-                video, drone, and 3D virtual tours — so your site never looks like a stock-photo
-                template.
+                <span className="font-semibold text-ink">One partner, start to finish</span> — the
+                team that shoots your media builds your site and wires up the systems behind it.
+                No juggling three vendors.
               </p>
             </div>
           </Reveal>
@@ -299,12 +299,12 @@ export default function HomePage() {
                 This inquiry came in at 2am. It still got booked.
               </h2>
               <p className="mt-4 max-w-md text-ink/65">
-                That's an AI assistant we build into your website — answering real questions,
+                That's the kind of assistant we can build into your website — answering real questions,
                 offering real appointment slots, and following up automatically. No missed
                 calls. No "sorry for the late reply." No lead left waiting until morning.
               </p>
-              <Link href="/ai-systems" className="mt-6 inline-block text-sm font-medium text-accent transition-colors hover:text-accent/80">
-                Explore AI systems →
+              <Link href="/smart-systems" className="mt-6 inline-block text-sm font-medium text-accent transition-colors hover:text-accent/80">
+                Explore smart systems →
               </Link>
             </Reveal>
           </div>

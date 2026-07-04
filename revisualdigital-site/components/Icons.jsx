@@ -42,3 +42,6 @@ export const IconTrendDown = () => (
 export const IconInbox = () => (
   <svg {...base}><path d="M22 12h-6l-2 3h-4l-2-3H2" /><path d="M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z" /></svg>
 );
+export const IconCamera = () => (
+  <svg {...base}><path d="M4 7h3l2-3h6l2 3h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z" /><circle cx="12" cy="13" r="3.5" /></svg>
+);

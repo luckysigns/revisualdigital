@@ -18,18 +18,18 @@ const services = [
     points: ["Modern design", "Mobile-first", "Fast loading", "SEO fundamentals", "Clear calls to action"],
   },
   {
-    href: "/ai-systems",
-    label: "02 — AI Systems",
-    headline: "AI integration",
-    body: "Practical AI that answers customers instantly, follows up on every lead, and takes repetitive admin off your plate. No hype — just systems that quietly do the work.",
-    points: ["Customer support & chat", "Email systems", "Lead follow-up", "Content workflows", "Admin automation"],
+    href: "/media",
+    label: "02 — Media",
+    headline: "Photo, video, drone & 3D tours",
+    body: "Our roots. We shoot your real business — so your website, socials, and listings look established, local, and impossible to confuse with a template.",
+    points: ["Photography", "Brand & social video", "Licensed drone", "3D virtual tours", "Shot for the web"],
   },
   {
-    href: "/automation",
-    label: "03 — Automation",
-    headline: "Automation systems",
-    body: "Booking, inquiry handling, CRM, and lead nurturing that run themselves — so nothing slips through the cracks and your week stops disappearing into admin.",
-    points: ["Booking workflows", "Inquiry automation", "CRM integration", "Lead nurturing", "Content pipelines"],
+    href: "/smart-systems",
+    label: "03 — Smart Systems",
+    headline: "Booking, follow-up & AI replies",
+    body: "The systems that catch what your website starts: online booking, instant inquiry replies, automatic follow-up, review requests, and AI-powered chat.",
+    points: ["Online booking", "Instant replies", "Lead follow-up", "Review requests", "AI chat assistant"],
   },
 ];
 
@@ -77,21 +77,6 @@ export default function ServicesPage() {
             </Reveal>
           ))}
 
-          <Reveal delay={240}>
-            <div className="rounded-2xl bg-accent-deep/20 p-8 sm:p-10">
-              <p className="text-xs font-medium uppercase tracking-widest text-accent">
-                The extra edge — Media
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight">
-                Photo, video, drone &amp; 3D tours
-              </h2>
-              <p className="mt-3 max-w-xl leading-relaxed text-ink/65">
-                We shoot our own media, so your website is built on real photos of your real
-                business — not stock imagery your competitors are using too. Available as an add-on
-                to any website project.
-              </p>
-            </div>
-          </Reveal>
         </div>
       </section>
 
