@@ -5,7 +5,7 @@ import { site } from "@/lib/config";
 
 export const metadata = {
   title: "Book a Free Call",
-  description: `Book a free 20-minute call with ${site.name}. We'll review your website and systems and show you what's costing you leads and time.`,
+  description: `Book a free 15-minute call with ${site.name}. We'll review your website and systems and show you what's costing you leads and time.`,
 };
 
 const next = [
@@ -14,7 +14,7 @@ const next = [
     body: "Book a time below or send the form. Takes two minutes.",
   },
   {
-    title: "We talk for 20 minutes",
+    title: "We talk for 15 minutes",
     body: "We look at your website and systems together and map the biggest opportunities. No pitch deck, no pressure.",
   },
   {
@@ -29,7 +29,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Book your free call"
-        sub="20 minutes. We'll tell you exactly what's costing you leads and time — and what fixing it looks like."
+        sub="15 minutes. We'll tell you exactly what's costing you leads and time — and what fixing it looks like."
       />
 
       <section>

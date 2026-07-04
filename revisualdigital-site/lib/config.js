@@ -10,15 +10,15 @@ export const site = {
   supportLine: "Modern websites. Smarter systems.",
 
   // Local focus — change these and they update everywhere.
-  city: "Your City",
-  region: "Your Region",
+  city: "Portland",
+  region: "the Portland Metro Area",
 
   // Contact
   email: "contact@revisualdigital.com",
 
   // Paste your Calendly / Cal.com link to show a booking embed
   // on the contact page. Leave empty to hide it.
-  calendlyUrl: "",
+  calendlyUrl: "https://calendly.com/revisualmedia/15-minute-meeting",
 };
 
 export const nav = [

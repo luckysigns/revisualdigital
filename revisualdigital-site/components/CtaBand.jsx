@@ -4,7 +4,7 @@ import { site } from "@/lib/config";
 
 export default function CtaBand({
   heading = "See what your business could look like.",
-  sub = "A free 20-minute call. We'll look at your website and systems, tell you what's costing you leads and time, and how to fix it. No pressure, no jargon.",
+  sub = "A free 15-minute call. We'll look at your website and systems, tell you what's costing you leads and time, and how to fix it. No pressure, no jargon.",
 }) {
   return (
     <section className="bg-ink">
