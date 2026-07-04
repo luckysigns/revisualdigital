@@ -59,8 +59,8 @@ export default function Stats() {
   return (
     <div ref={ref} className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
       {stats.map((s) => (
-        <div key={s.label} className="border-l-2 border-accent/60 pl-4">
-          <p className="text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+        <div key={s.label} className="border-l-2 border-accent/50 pl-4">
+          <p className="gradient-text text-3xl font-semibold tracking-tight sm:text-4xl">
             <Counter {...s} started={started} />
           </p>
           <p className="mt-1 text-sm text-ink/50">{s.label}</p>

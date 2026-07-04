@@ -8,6 +8,7 @@ export default function CtaBand({
 }) {
   return (
     <section className="relative overflow-hidden">
+      <div className="aurora absolute inset-0" />
       <div className="orb left-[10%] top-[-60px] h-72 w-72 bg-accent/20" />
       <div className="orb right-[5%] bottom-[-80px] h-80 w-80 bg-accent-deep/50" style={{ animationDelay: "-7s" }} />
       <div className="relative mx-auto max-w-content px-5 py-20 text-center sm:px-8 sm:py-28">
@@ -15,11 +16,11 @@ export default function CtaBand({
           <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
             {heading}
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-balance text-ink/55">{sub}</p>
+          <p className="mx-auto mt-4 max-w-xl text-balance text-ink/65">{sub}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/contact"
-              className="rounded-full bg-accent px-8 py-3.5 font-semibold text-night transition-all hover:bg-accent/85 hover:shadow-[0_0_32px_rgba(45,212,191,0.4)]"
+              className="rounded-full bg-gradient-to-r from-[#2DD4BF] to-[#22D3EE] px-8 py-3.5 font-semibold text-night transition-all hover:shadow-[0_0_36px_rgba(45,212,191,0.5)]"
             >
               Book a free call
             </Link>

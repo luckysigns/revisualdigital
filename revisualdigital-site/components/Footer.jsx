@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { nav, site } from "@/lib/config";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -7,10 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-content px-5 py-14 sm:px-8">
         <div className="flex flex-col justify-between gap-10 md:flex-row">
           <div className="max-w-xs">
-            <p className="text-lg font-semibold tracking-tight">
-              {site.shortName}
-              <span className="text-accent">.</span>
-            </p>
+            <Logo />
             <p className="mt-2 text-sm text-ink/50">{site.tagline}</p>
             <p className="mt-1 text-sm text-ink/50">{site.supportLine}</p>
           </div>

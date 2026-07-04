@@ -109,3 +109,58 @@
   transform: translateY(-5px);
   box-shadow: 0 20px 50px -20px rgba(45, 212, 191, 0.25);
 }
+
+/* ── v2: aurora, gradient text, chips, reverse marquee ── */
+.aurora {
+  background:
+    radial-gradient(600px 320px at 12% 0%, rgba(45, 212, 191, 0.16), transparent 60%),
+    radial-gradient(520px 300px at 88% 8%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(720px 420px at 55% 110%, rgba(167, 139, 250, 0.1), transparent 60%);
+  animation: auroraShift 14s ease-in-out infinite alternate;
+}
+@keyframes auroraShift {
+  from { opacity: 0.65; transform: translateY(0) scale(1); }
+  to { opacity: 1; transform: translateY(-18px) scale(1.04); }
+}
+
+.gradient-text {
+  background-image: linear-gradient(90deg, #2dd4bf, #22d3ee, #7dd3fc, #a78bfa, #2dd4bf);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientSlide 7s linear infinite;
+}
+@keyframes gradientSlide {
+  to { background-position: 220% 0; }
+}
+
+.chip-float {
+  animation: chipFloat 6s ease-in-out infinite;
+}
+@keyframes chipFloat {
+  0%, 100% { transform: translateY(0) rotate(var(--tilt, 0deg)); }
+  50% { transform: translateY(-12px) rotate(var(--tilt, 0deg)); }
+}
+
+.marquee-track-rev {
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  animation: marqueeRev 34s linear infinite;
+}
+.marquee:hover .marquee-track-rev {
+  animation-play-state: paused;
+}
+@keyframes marqueeRev {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.gborder {
+  background: linear-gradient(180deg, rgba(233, 240, 237, 0.14), rgba(233, 240, 237, 0.03) 40%, transparent);
+  transition: background 0.4s;
+}
+.gborder:hover {
+  background: linear-gradient(180deg, rgba(45, 212, 191, 0.55), rgba(34, 211, 238, 0.15) 50%, rgba(167, 139, 250, 0.2));
+}

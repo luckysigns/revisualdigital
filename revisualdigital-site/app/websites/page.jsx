@@ -70,7 +70,7 @@ export default function WebsitesPage() {
               <Reveal key={b.title} delay={i * 100}>
                 <div className="h-full card-glow rounded-2xl bg-surface p-7 ring-1 ring-white/5">
                   <h3 className="font-semibold">{b.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink/55">{b.body}</p>
+                  <p className="mt-3 text-[15px] leading-relaxed text-ink/65">{b.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -84,7 +84,7 @@ export default function WebsitesPage() {
             <Reveal>
               <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">Drag it</p>
               <h2 className="text-balance text-3xl font-semibold tracking-tight">See what a rebuild changes</h2>
-              <p className="mt-4 max-w-md text-ink/55">
+              <p className="mt-4 max-w-md text-ink/65">
                 Same business, same services — completely different first impression.
                 Drag the slider. This is the gap your customers feel in half a second.
               </p>
@@ -106,7 +106,7 @@ export default function WebsitesPage() {
               <Reveal key={d.title} delay={(i % 3) * 100}>
                 <div className="border-t-2 border-accent pt-4">
                   <h3 className="font-semibold">{d.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/55">{d.body}</p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-ink/65">{d.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -124,7 +124,7 @@ export default function WebsitesPage() {
               <h2 className="mt-3 max-w-2xl text-balance text-3xl font-semibold tracking-tight">
                 Real media. Not stock photos.
               </h2>
-              <p className="mt-4 max-w-2xl leading-relaxed text-ink/55">
+              <p className="mt-4 max-w-2xl leading-relaxed text-ink/65">
                 Most local business websites use the same stock imagery — which is why they all look
                 the same. We shoot photo, video, drone footage, and 3D virtual tours of your actual
                 business. Your customers see the real thing before they walk in the door, and your

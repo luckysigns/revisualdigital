@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { nav, site } from "@/lib/config";
+import { nav } from "@/lib/config";
+import Logo from "@/components/Logo";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -10,9 +11,8 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-night/75 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-content items-center justify-between px-5 sm:px-8">
-        <Link href="/" className="text-lg font-semibold tracking-tight" onClick={() => setOpen(false)}>
-          {site.shortName}
-          <span className="text-accent">.</span>
+        <Link href="/" onClick={() => setOpen(false)}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -29,7 +29,7 @@ export default function Nav() {
           )}
           <Link
             href="/contact"
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-night transition-all hover:bg-accent/85 hover:shadow-[0_0_24px_rgba(45,212,191,0.35)]"
+            className="rounded-full bg-gradient-to-r from-[#2DD4BF] to-[#22D3EE] px-5 py-2 text-sm font-semibold text-night transition-all hover:shadow-[0_0_24px_rgba(45,212,191,0.45)]"
           >
             Book a free call
           </Link>

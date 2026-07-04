@@ -54,7 +54,7 @@ export default function ContactPage() {
                       </span>
                       <div>
                         <h3 className="font-semibold">{s.title}</h3>
-                        <p className="mt-1 text-sm leading-relaxed text-ink/55">{s.body}</p>
+                        <p className="mt-1 text-[15px] leading-relaxed text-ink/65">{s.body}</p>
                       </div>
                     </div>
                   ))}

@@ -70,7 +70,7 @@ export default function AiSystemsPage() {
               <Reveal key={d.title} delay={(i % 3) * 100}>
                 <div className="border-t-2 border-accent pt-4">
                   <h3 className="font-semibold">{d.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/55">{d.body}</p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-ink/65">{d.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -87,7 +87,7 @@ export default function AiSystemsPage() {
             <Reveal delay={150}>
               <p className="mb-4 text-sm font-medium uppercase tracking-widest text-accent">Live demo</p>
               <h2 className="text-balance text-3xl font-semibold tracking-tight">Watch a 2am inquiry become a booking</h2>
-              <p className="mt-4 max-w-md text-ink/55">
+              <p className="mt-4 max-w-md text-ink/65">
                 This is the exact experience your customers get: instant answers, real
                 appointment slots, automatic confirmation. It never sleeps, never forgets
                 to follow up, and never lets a lead go cold.
@@ -116,7 +116,7 @@ export default function AiSystemsPage() {
             ))}
           </div>
           <Reveal delay={300}>
-            <p className="mt-10 max-w-2xl text-ink/55">
+            <p className="mt-10 max-w-2xl text-ink/65">
               None of this replaces you or your team. It handles the repetitive layer so the humans
               in your business can spend their time on the work that actually needs them.
             </p>

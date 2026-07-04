@@ -62,7 +62,7 @@ export default function AutomationPage() {
               <Reveal key={d.title} delay={(i % 3) * 100}>
                 <div className="border-t-2 border-accent pt-4">
                   <h3 className="font-semibold">{d.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink/55">{d.body}</p>
+                  <p className="mt-2 text-[15px] leading-relaxed text-ink/65">{d.body}</p>
                 </div>
               </Reveal>
             ))}
@@ -74,7 +74,7 @@ export default function AutomationPage() {
         <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
           <Reveal>
             <h2 className="text-3xl font-semibold tracking-tight">One lead, start to finish</h2>
-            <p className="mt-3 max-w-xl text-ink/55">
+            <p className="mt-3 max-w-xl text-ink/65">
               Here's what a fully automated inquiry looks like:
             </p>
           </Reveal>

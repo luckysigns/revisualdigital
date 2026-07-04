@@ -56,7 +56,7 @@ export default function ServicesPage() {
                       {s.label}
                     </p>
                     <h2 className="mt-3 text-2xl font-semibold tracking-tight">{s.headline}</h2>
-                    <p className="mt-3 leading-relaxed text-ink/55">{s.body}</p>
+                    <p className="mt-3 leading-relaxed text-ink/65">{s.body}</p>
                     <p className="mt-6 text-sm font-medium text-accent">
                       Learn more{" "}
                       <span className="inline-block transition-transform group-hover:translate-x-1">
@@ -85,7 +85,7 @@ export default function ServicesPage() {
               <h2 className="mt-3 text-2xl font-semibold tracking-tight">
                 Photo, video, drone &amp; 3D tours
               </h2>
-              <p className="mt-3 max-w-xl leading-relaxed text-ink/55">
+              <p className="mt-3 max-w-xl leading-relaxed text-ink/65">
                 We shoot our own media, so your website is built on real photos of your real
                 business — not stock imagery your competitors are using too. Available as an add-on
                 to any website project.
