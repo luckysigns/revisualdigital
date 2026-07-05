@@ -8,6 +8,18 @@ export const metadata = {
   description: `Professional photography, video, drone footage, and 3D virtual tours for ${site.city} businesses — real media that makes your website impossible to confuse with a template.`,
 };
 
+
+const gallery = [
+  { src: "/media/exterior-1.jpg", alt: "Exterior architectural photography", tag: "Exterior" },
+  { src: "/media/interior-1.jpg", alt: "Interior photography", tag: "Interior" },
+  { src: "/media/drone-1.jpg", alt: "Aerial drone photography", tag: "Drone" },
+  { src: "/media/commercial-1.jpg", alt: "Commercial space photography", tag: "Commercial" },
+  { src: "/media/interior-2.jpg", alt: "Interior detail photography", tag: "Interior" },
+  { src: "/media/drone-2.jpg", alt: "Aerial drone view", tag: "Drone" },
+  { src: "/media/exterior-2.jpg", alt: "Twilight exterior photography", tag: "Exterior" },
+  { src: "/media/tour-1.jpg", alt: "3D virtual tour dollhouse view", tag: "3D Tour" },
+];
+
 const services = [
   {
     title: "Photography",
@@ -64,6 +76,41 @@ export default function MediaPage() {
                     <h3 className="text-xl font-semibold tracking-tight">{b.title}</h3>
                     <p className="mt-3 text-[15px] leading-relaxed text-ink/65">{b.body}</p>
                   </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-white/5 bg-white/[0.02]">
+        <div className="mx-auto max-w-content px-5 py-20 sm:px-8">
+          <Reveal>
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <h2 className="text-3xl font-semibold tracking-tight">Recent work</h2>
+              <a
+                href="https://revisualmedia.com"
+                target="_blank"
+                rel="noopener"
+                className="text-sm font-medium text-accent transition-colors hover:text-accent/80"
+              >
+                See the full portfolio at ReVisual Media, our sister studio →
+              </a>
+            </div>
+          </Reveal>
+          <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            {gallery.map((g, i) => (
+              <Reveal key={g.src} delay={(i % 4) * 80}>
+                <div className="group relative overflow-hidden rounded-2xl ring-1 ring-white/10">
+                  <img
+                    src={g.src}
+                    alt={g.alt}
+                    loading="lazy"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute bottom-2 left-2 rounded-full bg-night/70 px-2.5 py-1 text-[10px] font-medium text-ink/90 backdrop-blur">
+                    {g.tag}
+                  </span>
                 </div>
               </Reveal>
             ))}

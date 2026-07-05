@@ -36,37 +36,60 @@ function OldSite() {
 
 function NewSite() {
   return (
-    <div className="absolute inset-0 overflow-hidden bg-[#0B100F] font-sans">
-      <div className="absolute -right-10 -top-16 h-48 w-48 rounded-full bg-[#2DD4BF]/25 blur-[70px]" />
-      <div className="flex items-center justify-between px-4 py-3 sm:px-6">
-        <p className="text-xs font-semibold text-white sm:text-sm">
-          Bridgetown<span className="text-[#2DD4BF]">.</span>
+    <div className="absolute inset-0 overflow-hidden bg-[#FBFAF7] font-sans">
+      <div className="flex items-center justify-between border-b border-black/5 bg-white/80 px-4 py-2.5 sm:px-5">
+        <p className="text-[11px] font-bold tracking-tight text-[#12263A] sm:text-sm">
+          Bridgetown Dental
         </p>
-        <span className="rounded-full bg-[#2DD4BF] px-3 py-1 text-[9px] font-semibold text-[#0B100F] sm:text-[11px]">
-          Book online
+        <div className="hidden gap-3 text-[9px] text-[#12263A]/60 sm:flex">
+          <span>Services</span>
+          <span>Team</span>
+          <span>Reviews</span>
+        </div>
+        <span className="rounded-full bg-[#1D6FE0] px-3 py-1 text-[9px] font-semibold text-white sm:text-[11px]">
+          Book now
         </span>
       </div>
-      <div className="px-4 pt-4 sm:px-6 sm:pt-6">
-        <p className="max-w-[240px] text-base font-semibold leading-tight tracking-tight text-white sm:text-2xl">
-          A dentist visit that books itself.
-        </p>
-        <p className="mt-2 max-w-[220px] text-[9px] leading-relaxed text-white/50 sm:text-xs">
-          Same-week appointments, online in 30 seconds. Reminders included.
-        </p>
-        <div className="mt-3 flex gap-2">
-          <span className="rounded-full bg-[#2DD4BF] px-3 py-1.5 text-[9px] font-semibold text-[#0B100F] sm:text-[11px]">
-            See open times
+      <div className="flex gap-4 px-4 pt-4 sm:px-5 sm:pt-5">
+        <div className="flex-1">
+          <span className="inline-block rounded-full bg-[#E8F1FD] px-2 py-0.5 text-[8px] font-semibold text-[#1D6FE0] sm:text-[9px]">
+            ★ 4.9 · 212 Google reviews
           </span>
-          <span className="rounded-full px-3 py-1.5 text-[9px] text-white/60 ring-1 ring-white/15 sm:text-[11px]">
-            Our services
-          </span>
-        </div>
-        <div className="mt-4 flex gap-2">
-          {["Thu 2:15pm", "Fri 10:00am", "Fri 3:30pm"].map((t) => (
-            <span key={t} className="rounded-lg bg-white/[0.06] px-2 py-1.5 text-[8px] text-white/70 ring-1 ring-white/10 sm:text-[10px]">
-              {t}
+          <p className="mt-2 max-w-[230px] text-[15px] font-bold leading-tight tracking-tight text-[#12263A] sm:text-2xl">
+            Gentle dentistry, same-week visits.
+          </p>
+          <p className="mt-1.5 max-w-[210px] text-[8.5px] leading-relaxed text-[#12263A]/60 sm:text-[11px]">
+            Book online in 30 seconds — evening and Saturday appointments available.
+          </p>
+          <div className="mt-2.5 flex gap-1.5">
+            <span className="rounded-full bg-[#1D6FE0] px-2.5 py-1 text-[8px] font-semibold text-white sm:text-[10px]">
+              See open times
             </span>
-          ))}
+            <span className="rounded-full border border-[#12263A]/15 px-2.5 py-1 text-[8px] text-[#12263A]/70 sm:text-[10px]">
+              Meet the team
+            </span>
+          </div>
+          <div className="mt-3 flex gap-1.5">
+            {["Thu 2:15pm", "Fri 10:00am", "Sat 9:30am"].map((t) => (
+              <span
+                key={t}
+                className="rounded-lg bg-white px-2 py-1 text-[8px] font-medium text-[#12263A]/80 shadow-sm ring-1 ring-black/5 sm:text-[10px]"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="hidden w-[36%] sm:block">
+          <div className="relative h-32 overflow-hidden rounded-xl bg-gradient-to-br from-[#CBE0F7] via-[#93BEE9] to-[#3E7BC0]">
+            <span className="absolute bottom-2 left-2 rounded-full bg-white/85 px-2 py-0.5 text-[8px] font-medium text-[#12263A]">
+              📸 Real office photos
+            </span>
+          </div>
+          <div className="mt-2 flex gap-1.5">
+            <div className="h-10 flex-1 rounded-lg bg-gradient-to-br from-[#E4EFF9] to-[#B5D2EC]" />
+            <div className="h-10 flex-1 rounded-lg bg-gradient-to-br from-[#D5E6F6] to-[#9FC4E8]" />
+          </div>
         </div>
       </div>
     </div>

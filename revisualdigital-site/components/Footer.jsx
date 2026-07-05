@@ -31,6 +31,14 @@ export default function Footer() {
               <p>
                 Serving {site.city} &amp; {site.region}
               </p>
+              <a
+                href={site.mediaSiteUrl}
+                target="_blank"
+                rel="noopener"
+                className="transition-colors hover:text-ink"
+              >
+                Our media studio → ReVisual Media
+              </a>
             </div>
           </div>
         </div>

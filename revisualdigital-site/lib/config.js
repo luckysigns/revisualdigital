@@ -19,6 +19,9 @@ export const site = {
   // Paste your Calendly / Cal.com link to show a booking embed
   // on the contact page. Leave empty to hide it.
   calendlyUrl: "https://calendly.com/revisualmedia/15-minute-meeting",
+
+  // Sister studio
+  mediaSiteUrl: "https://revisualmedia.com",
 };
 
 export const nav = [
