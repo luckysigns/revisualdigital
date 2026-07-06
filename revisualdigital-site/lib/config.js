@@ -24,6 +24,14 @@ export const site = {
   mediaSiteUrl: "https://revisualmedia.com",
 };
 
+// The ReVisual family of studios — shown in the footer.
+// current: true marks this site (plain text, not a link).
+export const studios = [
+  { name: "ReVisual Digital", blurb: "Websites, media & smart systems", url: "https://revisualdigital.com", current: true },
+  { name: "ReVisual Media", blurb: "Photo, video, drone & 3D tours", url: "https://revisualmedia.com", current: false },
+  { name: "CreatorApps", blurb: "Custom apps for creators", url: "https://creatorapps.app", current: false },
+];
+
 export const nav = [
   { href: "/services", label: "Services" },
   { href: "/websites", label: "Websites" },
